@@ -27,7 +27,7 @@ class CurrencyExchangeRate
 
     public static function selectRateNode($crawler)
     {
-        return $crawler->filter('.uccRes td')->eq(2);
+        return $crawler->filter('.uccResultAmount');
     }
 
     public static function parseRateNode($rateNode)
